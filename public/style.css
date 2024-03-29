@@ -1,0 +1,158 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+   
+}
+.logo-container {
+    display: flex;
+    justify-content: center; /* Aligns items horizontally to the center */
+    align-items: center; /* Aligns items vertically to the center */
+    position: absolute; /* Takes the element out of the normal document flow */
+    top: 6%; /* Positions the element 50% from the top of the page */
+    left: 0; /* Positions the element at the left edge of its containing element */
+    right: 0; /* Positions the element at the right edge of its containing element */
+    transform: translateY(-50%); /* Adjusts the position vertically to center */
+    height: 100px; /* Adjust as needed */
+}
+
+.logo {
+    width: 600px; /* Adjust the width as needed */
+    height: auto;
+}
+
+
+header {
+    background-color:black;
+    color: #fff;
+    padding: 20px;
+    text-align:center;
+}
+.container {
+    margin: 60px; 
+    left: 50%;
+        
+    
+} 
+h1 {
+    text-align: center;
+}
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nav__items {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+}
+
+.nav__item {
+    display: inline-block;
+    margin-left: 30px; /* Adjust as needed */
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+}
+
+
+input[type="text"] {
+    padding: 8px;
+    width: 200px;
+}
+select {
+    padding: 8px;
+}
+button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.opportunities {
+    display: flex;
+    justify-content:stretch; /* Center align the items horizontally */
+    flex-wrap: wrap;
+}
+
+.opportunity {
+    display: flex;
+    flex-direction: row; /* Stack elements vertically */
+    justify-content: space-between; /* Aligns items to the left and right edges */
+    align-items: center; /* Aligns items vertically */
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 10px;
+    text-align: center; /* Align text center */
+    color: white;
+    border-radius: 10px;
+}
+
+
+.opportunity .apply-button {
+    background-color: blue;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.month_container {
+    display: flex;
+    align-items: center;
+}
+
+.month_container p {
+    margin-right: 20px
+}
+.month_container a {
+    height: min-content;
+}
+
+.opportunity h2 {
+    margin: 0;
+}
+
+.about-section {
+    padding-top: 50px; /* Add space above the About section */
+}
+
+
+.opportunity .opening-month {
+    display: inline-block;
+    width: 100px; /* Adjust width as needed */
+    text-align:unset;
+}
+
+.footer {
+    text-align: center;
+    padding: var(--gutter-medium) 0 var(--gutter-normal);
+    color: white;
+} 
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 60px auto;
+        padding: 20px;
+        max-width: 90%; /* Adjust max-width for smaller screens */
+    }
+
+    .nav__items {
+        display: none; /* Hide the navigation links on smaller screens */
+    }
+}
+
