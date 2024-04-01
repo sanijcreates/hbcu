@@ -1,26 +1,31 @@
+@font-face {
+    font-family: 'Lexend Deca Light';
+    src: url('../fonts/LexendDeca-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lexend Deca Light', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
-   
-}
-.logo-container {
-    display: flex;
-    justify-content: center; /* Aligns items horizontally to the center */
-    align-items: center; /* Aligns items vertically to the center */
-    position: absolute; /* Takes the element out of the normal document flow */
-    top: 6%; /* Positions the element 50% from the top of the page */
-    left: 0; /* Positions the element at the left edge of its containing element */
-    right: 0; /* Positions the element at the right edge of its containing element */
-    transform: translateY(-50%); /* Adjusts the position vertically to center */
-    height: 100px; /* Adjust as needed */
+    font-size: 20px;
 }
 
-.logo {
-    width: 600px; /* Adjust the width as needed */
-    height: auto;
+.logo-container {
+    background: url(../images/hbcuusa-high-resolution-logo-removebg-preview.png);
+    background-size:contain ; /* Adjust the size of the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    height: 400px;
 }
 
 
@@ -45,29 +50,47 @@ h1 {
     align-items: center;
 }
 
-.nav {
+/* dark-mode/bright-mode */
+label{
     position: absolute;
-    top: 0;
-    right: 0;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 50px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+label:before{
+    position: absolute;
+    content: '';
+    width:20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+label.active:before{
+    left: 24px;
+    background: #fff;
+}
+body.night{
+    background: #000;
+    color: #fff;
 }
 
-.nav__items {
-    list-style-type: none;
-    margin: 10;
-    padding: 0;
+
+
+/* botstrap navbar */
+.nav {
+    margin: 5px; 
+
 }
-
-.nav__item {
-    display: inline-block;
-    margin-left: 30px; /* Adjust as needed */
+.nav-link{
+    color:white;
 }
-
-.nav__link {
-    text-decoration: none;
-    color: white;
-}
-
-
 input[type="text"] {
     padding: 8px;
     width: 200px;
@@ -97,7 +120,7 @@ button {
     margin: 5px;
     padding: 10px;
     text-align: center; /* Align text center */
-    color: white;
+    
     border-radius: 10px;
 }
 
