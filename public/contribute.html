@@ -8,12 +8,32 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
-  <label id="dark-change"></label>
-        <div class="logo-container">
-          <a href="index.html">
-            <img src="/images/hbcuusa-high-resolution-logo-removebg-preview.png" alt="Your Logo" class="logo">
+  <div class="main-nav">
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="/images/logo-no-background.png" alt="Your Logo" class="logo">
         </a>
-        </div>
+    </div>
+
+    <!-- Bootstrap navbar -->
+    <div class = "sub-nav">        
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+            <a class="nav-link active" href="./hbcu.html">HBCU</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./contribute.html">Contribute</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./signup.html" >Signup</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<label id="dark-change"></label>
 
 <div class="container1">
     <form action="/" method="post">
@@ -38,6 +58,16 @@
   
 
 <style>
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+}
+.sub-nav {
+    margin-top: 10px;
+}
+
+
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 

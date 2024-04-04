@@ -12,6 +12,10 @@ body {
     font-size: 20px;
 }
 
+main {
+    text-align: center;
+}
+
 .logo {
     width: 200px;
     margin: 20px;
@@ -63,22 +67,29 @@ label:before{
 label.active:before{
     left: 24px;
     background: #fff;
+    
 }
 body.night{
-    background: #000;
+    background: #3A3B3C;
     color: #fff;
 }
 
 
+body.night .nav-link {
+    color: white; /* Set text color to white in dark mode */
+}
+
+
+.nav-link {
+    color: #000; /* Set text color to black in bright mode */
+}
 
 /* botstrap navbar */
 .nav {
     margin: 5px; 
 
 }
-.nav-link{
-    color:white;
-}
+
 input[type="text"] {
     padding: 8px;
     width: 200px;
@@ -93,6 +104,23 @@ button {
     border: none;
     cursor: pointer;
 }
+
+.opportunity-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.opportunity-header span:first-child {
+    width: 75%; /* 80% width for the first label */
+}
+
+.opportunity-header span:last-child {
+    width: 25%; /* 20% width for the second label */
+}
+
 .opportunities {
     margin-left: 15%;
     margin-right: 15%;
@@ -114,7 +142,7 @@ button {
 
 
 .opportunity .apply-button {
-    background-color: blue;
+    background-color: darkblue;
     color: #fff;
     padding: 8px 16px;
     text-decoration: none;
@@ -150,7 +178,6 @@ button {
 .footer {
     text-align: center;
     padding: var(--gutter-medium) 0 var(--gutter-normal);
-    color: white;
 } 
 
 .main-nav {

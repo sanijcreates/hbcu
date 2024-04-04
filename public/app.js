@@ -46,12 +46,27 @@
         });
     });
     
-// dark-mode/brightmode
+
+    //dark mode/brightmode toggle
     var content = document.getElementsByTagName('body')[0];
-    var darkMode = document.getElementById('dark-change');
-    darkMode.addEventListener('click', function(){
-        darkMode.classList.toggle('active');
+    var darkModeToggle = document.getElementById('dark-change');
+    
+    darkModeToggle.addEventListener('click', function() {
+        toggleModes();
+    });
+    
+    function toggleModes() {
+        darkModeToggle.classList.toggle('active');
         content.classList.toggle('night');
-    })
+        
+        var isBrightModeActive = content.classList.contains('night');
+        if (isBrightModeActive) {
+            content.classList.add('bright');
+        } else {
+            content.classList.remove('bright');
+        }
+    }
+    
+
   
 
