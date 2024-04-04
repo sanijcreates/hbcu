@@ -12,22 +12,10 @@ body {
     font-size: 20px;
 }
 
-.logo-container {
-    background: url(../images/hbcuusa-high-resolution-logo-removebg-preview.png);
-    background-size:contain ; /* Adjust the size of the background image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-position: center; /* Center the background image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 15%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    height: 400px;
+.logo {
+    width: 200px;
+    margin: 20px;
 }
-
 
 header {
     background-color:black;
@@ -36,10 +24,10 @@ header {
     text-align:center;
 }
 .container {
-    margin: 60px; 
-    left: 50%;
-        
-    
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 90%
 } 
 h1 {
     text-align: center;
@@ -106,9 +94,8 @@ button {
     cursor: pointer;
 }
 .opportunities {
-    display: flex;
-    justify-content:stretch; /* Center align the items horizontally */
-    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .opportunity {
