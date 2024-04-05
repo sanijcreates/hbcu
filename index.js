@@ -14,14 +14,12 @@ var userSchema = new mongoose.Schema({
     email: String,
     subject: String
 });
-  
-
 
 // Define Mongoose Model
 var User = mongoose.model('User', userSchema);
 
 // Connect to MongoDB
-mongoose.connect("//enter you link for local server").then(() => {
+mongoose.connect("//enter your database link").then(() => {
     console.log(`Connected to Database`);
 }).catch((err) => {
     console.log(`Error in Connecting to Database: `, err);
@@ -49,20 +47,16 @@ app.post(`/`, (req, res) => {
     newUser.save()
     .then(() => {
         console.log("Record Inserted Successfully");
-        return res.redirect('about.html');
+        return res.redirect('/contribute.html');
     })
     .catch(err => {
         console.log("Error inserting record: ", err);
         return res.status(500).send("Error inserting record");
     });
-
 });
 
 // Handle GET request to root endpoint
 app.get("/", (req, res) => {
     res.set({"Access-Control-Allow-Origin": "*"});
-    return res.redirect('index.html');
+    return res.redirect('/index.html');
 });
-
-
-
