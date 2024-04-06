@@ -1,0 +1,189 @@
+[
+    {
+    "name": "Meta Scholars Program",
+    "description": "The Meta Scholars Program is a competitive program that provides scholarships, internships, and mentorship opportunities for HBCU students.",
+    "applicationMonth": "January",
+    "applicationLink": "https://whosnext.tmcf.org/jobs"
+  },
+  {
+    "name": "Google STEP Program",
+    "description": "The Google STEP Program is a competitive internship program for undergraduate students.",
+    "applicationMonth": "November",
+    "applicationLink": "https://buildyourfuture.withgoogle.com/programs/step"
+  },
+    {
+        "name": "Meta Scholars Program",
+        "description": "The Meta Scholars Program is a competitive program that provides scholarships, internships, and mentorship opportunities for HBCU students.",
+        "applicationMonth": "January",
+        "applicationLink": "https://whosnext.tmcf.org/jobs"
+    },
+    {
+        "name": "Google STEP Program",
+        "description": "The Google STEP Program is a competitive internship program for undergraduate students.",
+        "applicationMonth": "November",
+        "applicationLink": "https://buildyourfuture.withgoogle.com/programs/step"
+    },
+    {
+        "name": "Google Generation Scholarship",
+        "description": "",
+        "applicationMonth": "March",
+        "applicationLink": "https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship"
+    },
+    {
+        "name": "Goldman Sachs Market Madness Program",
+        "description": "",
+        "applicationMonth": "September",
+        "applicationLink": "https://www.goldmansachs.com/careers/students/programs/americas/market-madness-hbcu-possibilities.html"
+    },
+    {
+        "name": "Project Destined Tennessee",
+        "description": "",
+        "applicationMonth": "August",
+        "applicationLink": "https://www.linkedin.com/company/project-destined/jobs/"
+    },
+    {
+        "name": "Home Free USA",
+        "description": "",
+        "applicationMonth": "April",
+        "applicationLink": "https://form.jotform.com/HomeFreeUSA/ApplyToCFA"
+    },
+    {
+        "name": "Apple Pathway Alliance Program",
+        "description": "",
+        "applicationMonth": "January",
+        "applicationLink": "#"
+    },
+    {
+        "name": "New Technologies Microsoft",
+        "description": "",
+        "applicationMonth": "January",
+        "applicationLink": "https://newtechnologists.com/apply.html"
+    },
+    {
+        "name": "Soar HBCU",
+        "description": "",
+        "applicationMonth": "February",
+        "applicationLink": "https://cokeconsolidatedhbcusoar.com/?li_fat_id=3ef68cce-8dca-40ba-9331-f5d398716b20"
+    },
+    {
+        "name": "NBA HBCU Fellowship",
+        "description": "",
+        "applicationMonth": "December",
+        "applicationLink": "https://nbafoundation.nba.com/hbcu-fellowship/"
+    },
+    {
+        "name": "Medtronic Competition",
+        "description": "",
+        "applicationMonth": "Ongoing",
+        "applicationLink": "https://whosnext.tmcf.org/jobs"
+    },
+    {
+        "name": "US Bank Tech Fellowship",
+        "description": "",
+        "applicationMonth": "Ongoing",
+        "applicationLink": "https://usbankfellowship.splashthat.com/"
+    },
+    {
+        "name": "Honda Power of Dream Competition",
+        "description": "",
+        "applicationMonth": "March",
+        "applicationLink": "https://powerofdreams.splashthat.com/"
+    },
+    {
+        "name": "McDonald's Black and Positively Golden Scholarship",
+        "description": "",
+        "applicationMonth": "November",
+        "applicationLink": "https://www.tmcf.org/students-alumni/scholarship/tmcf-mcdonalds-black-and-positively-golden-scholarships/"
+    },
+    {
+        "name": "Honda Immersion",
+        "description": "",
+        "applicationMonth": "March",
+        "applicationLink": "https://whosnext.tmcf.org/jobs/1478?lang=en-us"
+    },
+    {
+        "name": "Moguls in the Making",
+        "description": "",
+        "applicationMonth": "April",
+        "applicationLink": "https://whosnext.tmcf.org/jobs/1424?lang=en-us"
+    },
+    {
+        "name": "Amazon Future Engineer Scholarship",
+        "description": "",
+        "applicationMonth": "December",
+        "applicationLink": "https://www.amazonfutureengineer.com/scholarship"
+    },
+    {
+        "name": "Microsoft HBCU Connect Program",
+        "description": "",
+        "applicationMonth": "February",
+        "applicationLink": "https://www.hbcuconnect.com/microsoft"
+    },
+    {
+        "name": "Facebook HBCU Fellowship",
+        "description": "",
+        "applicationMonth": "March",
+        "applicationLink": "https://www.facebook.com/careers/students-and-grads/hbcu-connect"
+    },
+    {
+        "name": "Twitter HBCU Fellowship",
+        "description": "",
+        "applicationMonth": "April",
+        "applicationLink": "https://www.hbcuconnect.com/twitter"
+    },
+    {
+        "name": "Chevron Energy Innovation Summit",
+        "description": "",
+        "applicationMonth": "April",
+        "applicationLink": "https://whosnext.tmcf.org/jobs/1436?lang=en-us"
+    },
+    {
+        "name": "So Ambitious HBCU Tour",
+        "description": "",
+        "applicationMonth": "April",
+        "applicationLink": "https://www.eventbrite.com/e/so-ambitious-hbcu-tour-alabama-state-university-10k-pitch-competition-tickets-863957529227?aff=erelexpmlt"
+    },
+    {
+        "name": "LinkedIn HBCU Fellowship",
+        "description": "",
+        "applicationMonth": "February",
+        "applicationLink": "https://www.hbcuconnect.com/linkedin"
+    },
+    {
+        "name": "Amazon HBCU Fellowship",
+        "description": "",
+        "applicationMonth": "March",
+        "applicationLink": "https://www.hbcuconnect.com/amazon"
+    },
+    {
+        "name": "Autodesk Software Engineering Fellowship",
+        "description": "",
+        "applicationMonth": "Ongoing",
+        "applicationLink": "https://autodeskhbcufellowship23.splashthat.com/"
+    },
+    {
+        "name": "Adobe HBCU 20*20 Fellowship",
+        "description": "",
+        "applicationMonth": "Ongoing",
+        "applicationLink": "https://theapplication.org/fellowships#"
+    },
+    {
+        "name": "The Pitch Competition",
+        "description": "",
+        "applicationMonth": "January",
+        "applicationLink": "https://whosnext.tmcf.org/jobs"
+    },
+    {
+        "name": "Major League Hacking Fellowship",
+        "description": "",
+        "applicationMonth": "March",
+        "applicationLink": "https://fellowship.mlh.io/"
+    },
+    {
+        "name": "Google Summer of Code",
+        "description": "",
+        "applicationMonth": "March",
+        "applicationLink": "https://summerofcode.withgoogle.com/"
+    }
+]
+

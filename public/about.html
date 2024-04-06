@@ -1,106 +1,170 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - HBCU & MSI Initiatives</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-    }
-  </script>
-  <style>
-    @font-face {
-      font-family: 'Lexend Deca Light';
-      src: url('../fonts/LexendDeca-Light.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    body {
-      font-family: 'Lexend Deca Light', sans-serif;
-    }
-  </style>
-</head>
-<body class="flex flex-col h-screen dark:bg-gray-800 dark:text-white transition-colors duration-300">
-  <header class="bg-blue-800 dark:bg-gray-900 text-white py-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="logo-container">
-        <a href="index.html">
-          <img src="/images/logo-no-background.png" alt="Your Logo" class="h-8">
-        </a>
-      </div>
-      <nav class="flex items-center space-x-4">
-        <ul class="flex space-x-10">
-          <li><a href="./index.html" class="hover:text-gray-500">Home</a></li>
-          <li><a href="./hbcu.html" class="hover:text-gray-500">HBCU</a></li>
-          <li><a href="./contribute.html" class="hover:text-gray-500">Add Program</a></li>
-          <li><a href="./signup.html" class="hover:text-gray-500">Signup</a></li>
-        </ul>
-        <button id="theme-toggle" class="px-4 py-2 rounded-md hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-          <svg id="theme-toggle-dark-icon" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-          <svg id="theme-toggle-light-icon" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-        </button>
-      </nav>
-    </div>
-  </header>
-
-  <main class="flex-1 bg-gray-100 dark:bg-gray-800 p-8">
-    <section class="about-section">
-      <h2 class="text-2xl font-bold mb-4 dark:text-white">Welcome to HBCU & MSI Initiatives</h2>
-      <p class="text-gray-700 dark:text-gray-300">
-        Do you want to earn some extra cash and get industry based experience during your college? Do you see your friends posts about getting external scholarship, and wonder where did they apply from?
-      </p>
-      <p class="text-gray-700 dark:text-gray-300 mt-4">
-        HBCUUSA is a simple yet efficient one-stop platform for all the HBCU and MSI students where you can apply to all the CSR, internship, fellowships programs opened in that specific time. We are dedicated to showcasing Corporate Social Responsibility (CSR) initiatives and providing information about fellowships specifically aimed at students of Historically Black Colleges and Universities (HBCU) and Minority-Serving Institutions (MSI). Our platform aims to connect students with opportunities that promote diversity, inclusion, and social impact.
-      </p>
-    </section>
-
-    <section class="mission-vision mt-8">
-      <h2 class="text-2xl font-bold mb-4 dark:text-white">Our Mission</h2>
-      <p class="text-gray-700 dark:text-gray-300">
-        Our mission is to empower students of HBCUs and MSIs by providing access to resources, opportunities, and information about CSR initiatives and fellowships that support their personal and professional development.
-      </p>
-
-      <h2 class="text-2xl font-bold mb-4 mt-8 dark:text-white">Our Vision</h2>
-      <p class="text-gray-700 dark:text-gray-300">
-        We envision a future where every student, regardless of their background, has equal access to opportunities for growth, success, and positive impact in their communities.
-      </p>
-    </section>
-  </main>
-
-  <footer class="bg-blue-800 dark:bg-gray-900 text-white py-4">
-    <div class="container mx-auto text-center">
-      <p>&copy;2024 Copyright: All Rights Reserved by HBCUUSA.com</p>
-    </div>
-  </footer>
-
-  <script>
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-    const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
-
-    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-      themeToggleDarkIcon.classList.remove('hidden');
-    } else {
-      document.documentElement.classList.remove('dark');
-      themeToggleLightIcon.classList.remove('hidden');
-    }
-
-    themeToggleBtn.addEventListener('click', function() {
-      document.documentElement.classList.toggle('dark');
-      if (document.documentElement.classList.contains('dark')) {
-        localStorage.setItem('theme', 'dark');
-        themeToggleDarkIcon.classList.remove('hidden');
-        themeToggleLightIcon.classList.add('hidden');
-      } else {
-        localStorage.setItem('theme', 'light');
-        themeToggleDarkIcon.classList.add('hidden');
-        themeToggleLightIcon.classList.remove('hidden');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - HBCU & MSI Initiatives</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    <style>
+      @font-face {
+        font-family: "Lexend Deca Light";
+        src: url("../fonts/LexendDeca-Light.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
       }
-    });
-  </script>
-</body>
+      body {
+        font-family: "Lexend Deca Light", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="flex flex-col h-screen dark:bg-gray-800 dark:text-white transition-colors duration-300"
+  >
+    <header class="bg-blue-800 dark:bg-gray-900 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="logo-container">
+          <a href="index.html">
+            <img
+              src="/images/logo-no-background.png"
+              alt="Your Logo"
+              class="h-8"
+            />
+          </a>
+        </div>
+        <nav class="flex items-center space-x-4">
+          <ul class="flex space-x-10">
+            <li><a href="./index.html" class="hover:text-gray-500">Home</a></li>
+            <li><a href="./hbcu.html" class="hover:text-gray-500">HBCU</a></li>
+            <li>
+              <a href="./about.html" class="hover:text-gray-500">About</a>
+            </li>
+            <li>
+              <a href="./contribute.html" class="hover:text-gray-500"
+                >Add Program</a
+              >
+            </li>
+            <li>
+              <a href="./signup.html" class="hover:text-gray-500">Signup</a>
+            </li>
+          </ul>
+          <button
+            id="theme-toggle"
+            class="px-4 py-2 rounded-md hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <svg
+              id="theme-toggle-dark-icon"
+              class="w-6 h-6 hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              ></path>
+            </svg>
+            <svg
+              id="theme-toggle-light-icon"
+              class="w-6 h-6 hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1 bg-gray-100 dark:bg-gray-800 p-8">
+      <section class="about-section">
+        <h2 class="text-2xl font-bold mb-4 dark:text-white">
+          Welcome to HBCU & MSI Initiatives
+        </h2>
+        <p class="text-gray-700 dark:text-gray-300">
+          Do you want to earn some extra cash and get industry based experience
+          during your college? Do you see your friends posts about getting
+          external scholarship, and wonder where did they apply from?
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 mt-4">
+          HBCUUSA is a simple yet efficient one-stop platform for all the HBCU
+          and MSI students where you can apply to all the CSR, internship,
+          fellowships programs opened in that specific time. We are dedicated to
+          showcasing Corporate Social Responsibility (CSR) initiatives and
+          providing information about fellowships specifically aimed at students
+          of Historically Black Colleges and Universities (HBCU) and
+          Minority-Serving Institutions (MSI). Our platform aims to connect
+          students with opportunities that promote diversity, inclusion, and
+          social impact.
+        </p>
+      </section>
+
+      <section class="mission-vision mt-8">
+        <h2 class="text-2xl font-bold mb-4 dark:text-white">Our Mission</h2>
+        <p class="text-gray-700 dark:text-gray-300">
+          Our mission is to empower students of HBCUs and MSIs by providing
+          access to resources, opportunities, and information about CSR
+          initiatives and fellowships that support their personal and
+          professional development.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4 mt-8 dark:text-white">Our Vision</h2>
+        <p class="text-gray-700 dark:text-gray-300">
+          We envision a future where every student, regardless of their
+          background, has equal access to opportunities for growth, success, and
+          positive impact in their communities.
+        </p>
+      </section>
+    </main>
+
+    <footer class="bg-blue-800 dark:bg-gray-900 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy;2024 Copyright: All Rights Reserved by HBCUUSA.com</p>
+      </div>
+    </footer>
+
+    <script>
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const themeToggleDarkIcon = document.getElementById(
+        "theme-toggle-dark-icon"
+      );
+      const themeToggleLightIcon = document.getElementById(
+        "theme-toggle-light-icon"
+      );
+
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+        themeToggleDarkIcon.classList.remove("hidden");
+      } else {
+        document.documentElement.classList.remove("dark");
+        themeToggleLightIcon.classList.remove("hidden");
+      }
+
+      themeToggleBtn.addEventListener("click", function () {
+        document.documentElement.classList.toggle("dark");
+        if (document.documentElement.classList.contains("dark")) {
+          localStorage.setItem("theme", "dark");
+          themeToggleDarkIcon.classList.remove("hidden");
+          themeToggleLightIcon.classList.add("hidden");
+        } else {
+          localStorage.setItem("theme", "light");
+          themeToggleDarkIcon.classList.add("hidden");
+          themeToggleLightIcon.classList.remove("hidden");
+        }
+      });
+    </script>
+  </body>
 </html>

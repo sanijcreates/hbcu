@@ -1,0 +1,14 @@
+[
+    {
+    "name": "Meta Scholars Program",
+    "description": "The Meta Scholars Program is a competitive program that provides scholarships, internships, and mentorship opportunities for HBCU students.",
+    "applicationMonth": "January",
+    "applicationLink": "https://whosnext.tmcf.org/jobs"
+  },
+  {
+    "name": "Google STEP Program",
+    "description": "The Google STEP Program is a competitive internship program for undergraduate students.",
+    "applicationMonth": "November",
+    "applicationLink": "https://buildyourfuture.withgoogle.com/programs/step"
+  }
+]
