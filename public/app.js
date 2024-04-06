@@ -1,6 +1,6 @@
 //filter search for opportunities
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById("searchInput");
   const monthSelect = document.getElementById("monthSelect");
   const typeSelect = document.getElementById("typeSelect");
@@ -11,35 +11,41 @@ document.addEventListener("DOMContentLoaded", function() {
   typeSelect.addEventListener("change", filterOpportunities);
 
   function filterOpportunities() {
-      const searchTerm = searchInput.value.trim().toLowerCase();
-      const selectedMonth = monthSelect.value.toLowerCase();
-      const selectedType = typeSelect.value.toLowerCase();
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    const selectedMonth = monthSelect.value.toLowerCase();
+    const selectedType = typeSelect.value.toLowerCase();
 
-      opportunities.forEach(function(opportunity) {
-          const opportunityTitle = opportunity.querySelector("h2").textContent.toLowerCase();
-          const opportunityMonth = opportunity.querySelector(".month_container p").textContent.toLowerCase();
+    opportunities.forEach(function (opportunity) {
+      const opportunityTitle = opportunity
+        .querySelector("h2")
+        .textContent.toLowerCase();
+      const opportunityMonth = opportunity
+        .querySelector(".month_container p")
+        .textContent.toLowerCase();
 
-          let opportunityType = "";
-          if (opportunity.classList.contains("fellowship")) {
-              opportunityType = "fellowship";
-          } else if (opportunity.classList.contains("internship")) {
-              opportunityType = "internship";
-          } else if (opportunity.classList.contains("conference")) {
-              opportunityType = "conference";
-          }
+      let opportunityType;
+      if (opportunity.classList.contains("fellowship")) {
+        opportunityType = "fellowship";
+      } else if (opportunity.classList.contains("internship")) {
+        opportunityType = "internship";
+      } else if (opportunity.classList.contains("conference")) {
+        opportunityType = "conference";
+      } else {
+        opportunityType = "";
+      }
 
-          if ((searchTerm === "" || opportunityTitle.includes(searchTerm)) &&
-              (selectedMonth === "" || opportunityMonth === selectedMonth) &&
-              (selectedType === "" || opportunityType === selectedType)) {
-              opportunity.style.display = "flex";
-          } else {
-              opportunity.style.display = "none";
-          }
-      });
+      if (
+        (searchTerm === "" || opportunityTitle.includes(searchTerm)) &&
+        (selectedMonth === "" || opportunityMonth === selectedMonth) &&
+        (selectedType === "" || opportunityType === selectedType)
+      ) {
+        opportunity.style.display = "flex";
+      } else {
+        opportunity.style.display = "none";
+      }
+    });
   }
 });
-
-
 
 //filter search for all the months
 

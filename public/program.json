@@ -1,17 +1,5 @@
 [
     {
-    "name": "Meta Scholars Program",
-    "description": "The Meta Scholars Program is a competitive program that provides scholarships, internships, and mentorship opportunities for HBCU students.",
-    "applicationMonth": "January",
-    "applicationLink": "https://whosnext.tmcf.org/jobs"
-  },
-  {
-    "name": "Google STEP Program",
-    "description": "The Google STEP Program is a competitive internship program for undergraduate students.",
-    "applicationMonth": "November",
-    "applicationLink": "https://buildyourfuture.withgoogle.com/programs/step"
-  },
-    {
         "name": "Meta Scholars Program",
         "description": "The Meta Scholars Program is a competitive program that provides scholarships, internships, and mentorship opportunities for HBCU students.",
         "applicationMonth": "January",
@@ -46,6 +34,12 @@
         "description": "",
         "applicationMonth": "April",
         "applicationLink": "https://form.jotform.com/HomeFreeUSA/ApplyToCFA"
+    },
+   {
+        "name": "Palantir Women in Technology",
+        "description": "",
+        "applicationMonth": "March",
+        "applicationLink": "https://www.palantir.com/careers/students/scholarship/wit-north-america/"
     },
     {
         "name": "Apple Pathway Alliance Program",
@@ -126,12 +120,6 @@
         "applicationLink": "https://www.facebook.com/careers/students-and-grads/hbcu-connect"
     },
     {
-        "name": "Twitter HBCU Fellowship",
-        "description": "",
-        "applicationMonth": "April",
-        "applicationLink": "https://www.hbcuconnect.com/twitter"
-    },
-    {
         "name": "Chevron Energy Innovation Summit",
         "description": "",
         "applicationMonth": "April",
@@ -142,12 +130,6 @@
         "description": "",
         "applicationMonth": "April",
         "applicationLink": "https://www.eventbrite.com/e/so-ambitious-hbcu-tour-alabama-state-university-10k-pitch-competition-tickets-863957529227?aff=erelexpmlt"
-    },
-    {
-        "name": "LinkedIn HBCU Fellowship",
-        "description": "",
-        "applicationMonth": "February",
-        "applicationLink": "https://www.hbcuconnect.com/linkedin"
     },
     {
         "name": "Amazon HBCU Fellowship",
