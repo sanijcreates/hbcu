@@ -206,5 +206,11 @@
         });
     </script>
     <script src="app.js"></script>
+    
+    <!--    // Attach event listeners to the search input and month select dropdown to trigger filtering -->
+    <script>  
+        document.getElementById("searchInput").addEventListener("input", filterPrograms);
+      document.getElementById("monthSelect").addEventListener("change", filterPrograms);
+    </script>
   </body>
 </html>

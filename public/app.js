@@ -1,73 +1,22 @@
-//filter search for opportunities
+// Function to filter programs based on both search input and selected month
+function filterPrograms() {
+  const searchValue = document.getElementById("searchInput").value.toLowerCase();
+  const selectedMonth = document.getElementById("monthSelect").value.toLowerCase();
+  const opportunities = document.getElementsByClassName("opportunity");
 
-document.addEventListener("DOMContentLoaded", function () {
-  const searchInput = document.getElementById("searchInput");
-  const monthSelect = document.getElementById("monthSelect");
-  const typeSelect = document.getElementById("typeSelect");
-  const opportunities = document.querySelectorAll(".opportunity");
-
-  searchInput.addEventListener("input", filterOpportunities);
-  monthSelect.addEventListener("change", filterOpportunities);
-  typeSelect.addEventListener("change", filterOpportunities);
-
-  function filterOpportunities() {
-    const searchTerm = searchInput.value.trim().toLowerCase();
-    const selectedMonth = monthSelect.value.toLowerCase();
-    const selectedType = typeSelect.value.toLowerCase();
-
-    opportunities.forEach(function (opportunity) {
-      const opportunityTitle = opportunity
-        .querySelector("h2")
-        .textContent.toLowerCase();
-      const opportunityMonth = opportunity
-        .querySelector(".month_container p")
-        .textContent.toLowerCase();
-
-      let opportunityType;
-      if (opportunity.classList.contains("fellowship")) {
-        opportunityType = "fellowship";
-      } else if (opportunity.classList.contains("internship")) {
-        opportunityType = "internship";
-      } else if (opportunity.classList.contains("conference")) {
-        opportunityType = "conference";
-      } else {
-        opportunityType = "";
-      }
-
-      if (
-        (searchTerm === "" || opportunityTitle.includes(searchTerm)) &&
-        (selectedMonth === "" || opportunityMonth === selectedMonth) &&
-        (selectedType === "" || opportunityType === selectedType)
-      ) {
-        opportunity.style.display = "flex";
-      } else {
-        opportunity.style.display = "none";
-      }
-    });
+  // Loop through all programs and hide those that don't match the search input or selected month
+  for (let i = 0; i < opportunities.length; i++) {
+    const programName = opportunities[i].querySelector("h2").innerText.toLowerCase();
+    const programMonth = opportunities[i].querySelector(".text-gray-600").innerText.toLowerCase();
+    if ((searchValue === "" || programName.includes(searchValue)) &&
+        (selectedMonth === "" || programMonth.includes(selectedMonth))) {
+      opportunities[i].style.display = "block";
+    } else {
+      opportunities[i].style.display = "none";
+    }
   }
-});
+}
 
-//filter search for all the months
-
-document.addEventListener("DOMContentLoaded", function () {
-  const monthSelect = document.getElementById("monthSelect");
-  const opportunities = document.querySelectorAll(".opportunity");
-
-  monthSelect.addEventListener("change", function () {
-    const selectedMonth = monthSelect.value.toLowerCase();
-
-    opportunities.forEach((opportunity) => {
-      const openingMonth = opportunity
-        .querySelector("p")
-        .textContent.toLowerCase();
-      if (openingMonth.includes(selectedMonth)) {
-        opportunity.style.display = "flex";
-      } else {
-        opportunity.style.display = "none";
-      }
-    });
-  });
-});
 
 //dark mode/brightmode toggle
 const themeToggleBtn = document.getElementById("theme-toggle");
