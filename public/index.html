@@ -142,7 +142,6 @@
             class="opportunity-header flex justify-between items-center mb-4 dark:text-white"
           >
             <span>Programs</span>
-            <span>Application opens</span>
           </div>
           <!-- Container for dynamically generated opportunities -->
           <div id="opportunitiesContainer" class="space-y-4">
@@ -194,7 +193,7 @@
           <p>${program.description}</p>
         </div>
         <div class="flex justify-between items-center">
-          <p class="text-gray-600 dark:text-gray-400">${program.applicationMonth}</p>
+          <p class="text-gray-600 dark:text-gray-400">Application opens in : ${program.applicationMonth}</p>
           <a href="${program.applicationLink}" class="bg-blue-500 dark:bg-blue-700 text-white py-2 px-4 rounded-md hover:bg-blue-600 dark:hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500">Apply</a>
         </div>
       `;
