@@ -18,9 +18,13 @@ var userSchema = new mongoose.Schema({
 // Define Mongoose Model
 var User = mongoose.model("User", userSchema);
 
+
+
+const username = process.env.MONGODB_USERNAME;
+const password = process.env.MONGODB_PASSWORD;
 // Connect to MongoDB
 mongoose
-  .connect("//enter your database link")
+  .connect(`mongodb+srv://${username}:${password}@chatappp.qkoibo4.mongodb.net/sumiran`)
   .then(() => {
     console.log(`Connected to Database`);
   })
@@ -46,6 +50,7 @@ app.post(`/`, (req, res) => {
     subject: subject,
   });
 
+
   // Save the new user to the database
   newUser
     .save()
@@ -58,6 +63,34 @@ app.post(`/`, (req, res) => {
       return res.status(500).send("Error inserting record");
     });
 });
+
+
+
+
+// Handle POST request to /signup endpoint
+app.post(`/signup`, (req, res) => {
+  var name = req.body.name;
+  var email = req.body.email;
+
+  var newUser = new User({
+    name: name,
+    email: email,
+  });
+
+  // Save the new user to the database
+  newUser
+    .save()
+    .then(() => {
+      console.log("Record Inserted Successfully");
+      return res.redirect("/signup.html"); // Redirect to signup page
+    })
+    .catch((err) => {
+      console.log("Error inserting record: ", err);
+      return res.status(500).send("Error inserting record");
+    });
+});
+
+
 
 // Handle GET request to root endpoint
 app.get("/", (req, res) => {

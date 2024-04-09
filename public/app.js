@@ -18,6 +18,7 @@ function filterPrograms() {
 }
 
 
+
 //dark mode/brightmode toggle
 const themeToggleBtn = document.getElementById("theme-toggle");
 const themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");

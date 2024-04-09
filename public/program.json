@@ -24,8 +24,14 @@
         "applicationLink": "https://www.goldmansachs.com/careers/students/programs/americas/market-madness-hbcu-possibilities.html"
     },
     {
-        "name": "Project Destined Tennessee",
-        "description": "",
+        "name": "2024 Sands Hospitality Immersion Program",  
+        "description": "",          
+        "applicationMonth": "April",
+        "applicationLink": "https://whosnext.tmcf.org/jobs/1486?lang=en-us"
+    },
+    {
+        "name": "Tennessee Titans Sports Venue Real Estate Development Bridge Program",
+        "description": "Fisk University",
         "applicationMonth": "August",
         "applicationLink": "https://www.linkedin.com/company/project-destined/jobs/"
     },
@@ -44,8 +50,8 @@
     {
         "name": "Apple Pathway Alliance Program",
         "description": "",
-        "applicationMonth": "January",
-        "applicationLink": "#"
+        "applicationMonth": "February",
+        "applicationLink": "https://jobs.apple.com/en-us/details/200539647/apple-pathways-alliance"
     },
     {
         "name": "New Technologies Microsoft",
@@ -92,7 +98,7 @@
     {
         "name": "Honda Immersion",
         "description": "",
-        "applicationMonth": "March",
+        "applicationMonth": "April",
         "applicationLink": "https://whosnext.tmcf.org/jobs/1478?lang=en-us"
     },
     {
@@ -206,7 +212,7 @@
     {
         "name": "Bloomberg Accelerator Summer School",
         "description": "",
-        "applicationMonth": "April",
+        "applicationMonth": "May",
         "applicationLink": "https://www.bloomberg.com/company/career/bloomberg-engineering-accelerator/"
     },
     {
