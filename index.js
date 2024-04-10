@@ -18,8 +18,8 @@ var userSchema = new mongoose.Schema({
 // Define Mongoose Model
 var User = mongoose.model("User", userSchema);
 
-const username = "gpokharel02";
-const password = "gpokharel02";
+const username = process.env.username;
+const password = process.env.password;
 // Connect to MongoDB
 mongoose
   .connect(`mongodb+srv://${username}:${password}@chatappp.qkoibo4.mongodb.net/sumiranm`)
@@ -31,7 +31,7 @@ mongoose
   });
 
 // Start the server
-const port = process.env.PO RT || 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
