@@ -18,13 +18,11 @@ var userSchema = new mongoose.Schema({
 // Define Mongoose Model
 var User = mongoose.model("User", userSchema);
 
-
-
-const username = process.env.MONGODB_USERNAME;
-const password = process.env.MONGODB_PASSWORD;
+const username = "gpokharel02";
+const password = "gpokharel02";
 // Connect to MongoDB
 mongoose
-  .connect(`mongodb+srv://${username}:${password}@chatappp.qkoibo4.mongodb.net/sumiran`)
+  .connect(`mongodb+srv://${username}:${password}@chatappp.qkoibo4.mongodb.net/sumiranm`)
   .then(() => {
     console.log(`Connected to Database`);
   })
@@ -33,7 +31,7 @@ mongoose
   });
 
 // Start the server
-const port = process.env.PORT || 3000;
+const port = process.env.PO RT || 3000;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
@@ -63,8 +61,6 @@ app.post(`/`, (req, res) => {
       return res.status(500).send("Error inserting record");
     });
 });
-
-
 
 
 // Handle POST request to /signup endpoint
